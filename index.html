@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="jquery.js"></script>
+    <script src="data_generator.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="livestamp.js"></script>
+    <title>Twiddler</title>
+    <!-- <link rel="icon" href="twiddler2.png" type="image/icon type"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="twiddler.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="bird-container bird-container--one">
+        <div class="bird bird--one"></div>
+      </div>
+
+      <div class="bird-container bird-container--two">
+        <div class="bird bird--two"></div>
+      </div>
+
+      <div class="bird-container bird-container--three">
+        <div class="bird bird--three"></div>
+      </div>
+
+      <div class="bird-container bird-container--four">
+        <div class="bird bird--four"></div>
+      </div>
+
+    </div>
+
+
+    <section class='title'>
+    <button class='home'>Twiddler</button>
+    </section>
+
+
+    <section class='menu'>
+      <img class='image' src='images/pngwing.com.png'>
+      <button id='feed'>Get New Twiddle!</button>
+      <audio id="mysoundclip" preload="auto">
+        <source src="sound-effects/bird-call.mp3"> </source>
+      </audio>
+      <div class='twiddle'>
+        <textarea id='visitor' maxlength='13' placeholder="Who Are You?" required></textarea>
+        <textarea id='visitorMessage' maxlength="120" placeholder="Thoughts Are Like Clouds In The Sky . . ." required></textarea>
+        <button id='newThought'>Share Yours</button>
+        <audio id="mysoundclip2" preload="auto">
+          <source src="sound-effects/woosh.mp3"> </source>
+        </audio>
+      </div>
+      <button id='twiddleInput'>Twiddle!</button>
+    </section>
+
+
+    <section class='twiddlerFeed'></section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
